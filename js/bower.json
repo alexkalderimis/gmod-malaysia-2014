@@ -1,0 +1,17 @@
+{
+  "name": "gmod-malaysia-2014",
+  "version": "0.1.0",
+  "authors": [
+    "Alex Kalderimis <alexkalderimis@gmail.com>"
+  ],
+  "description": "Training materials",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

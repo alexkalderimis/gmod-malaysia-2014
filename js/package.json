@@ -1,0 +1,11 @@
+{
+  "name": "GMOD-Malaysia-2014",
+  "description": "Training materials for GMOD Malaysia 2014",
+  "devDependencies": {
+    "phantomjs" : "~1.9",
+    "karma" : "~0.10",
+    "karma-junit-reporter" : "~0.1",
+    "karma-jasmine" : "~0.1",
+    "protractor" : "~0.17.0"
+  }
+}

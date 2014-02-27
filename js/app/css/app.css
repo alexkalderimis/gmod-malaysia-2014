@@ -1,0 +1,61 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.grid-list {
+    width: 100%;
+}
+
+.grid-list > li {
+    list-style-type: none;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    margin: 0 1em 1em 0;
+    padding: 1em 0 0 1em;
+}
+.grid-list > li .name {
+    display: block;
+    color: rgb(35, 25, 25);
+}
+
+#menu .main-heading {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    padding: 0.5em 0.8em;
+}
+
+table td.list-desc {
+    font-size: 0.8em;
+    color: #888;
+}
+

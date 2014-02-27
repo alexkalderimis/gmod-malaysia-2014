@@ -1,0 +1,24 @@
+<h2>Lists in {{connection.mine.root}}</h2>
+
+<table class="pure-table">
+    <thead>
+        <tr>
+            <th ng-repeat="(i, th) in head"
+                ng-class="selectedCls(i)"
+                ng-click="changeSorting(i)">
+                {{th}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="list in lists | orderBy:head[sorting.idx]:sorting.dir == 'desc'">
+            <td>
+                <a href="#/list/{{list.name}}">{{list.name}}</a>
+            </td>
+            <td class="list-desc">{{list.description}}</td>
+            <td>{{list.type}}</td>
+            <td>{{list.size}}</td>
+        </tr>
+    </tbody>
+</table>
+

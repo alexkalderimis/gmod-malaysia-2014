@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" ng-app="GMODMalaysiaApp">
+<head>
+  <meta charset="utf-8">
+  <title>GMOD Malaysia Demonstration App</title>
+
+  <link rel="stylesheet" href="css/side-menu.css"/>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" type="text/css" href="http://cdn.intermine.org/js/intermine/im-tables/latest/imtables.css">
+  <link rel="stylesheet" type="text/css"
+        href="http://cdn.intermine.org/js/intermine/apps-c/list-widgets/2.0.4/app.bundle.prefixed.min.css">
+
+</head>
+<body>
+  <div id="layout" ng-controller="RootCntl">
+
+    <div id="menu">
+        <div class="pure-menu pure-menu-open">
+          <a class="pure-menu-heading main-heading">Demo App</a>
+          <a class="pure-menu-heading">Data Types</a>
+          <ul></li>
+            <a href="#/organisms">organisms</a>
+          <li></li>
+            <a href="#/genes">genes</a>
+          <li></ul>
+          <a class="pure-menu-heading">Tools</a>
+          <ul></li>
+            <a href="#/lists">lists</a>
+          <li></li>
+            <a href="#/widgets">enrichment</a>
+          <li></ul>
+        </div>
+        <div ng-controller="URLCntl">
+            <form ng-submit="changeRoot()">
+                <select
+                    ng-model="newService"
+                    ng-options="s.name for s in services track by s.name">
+                </select>
+                <input class="pure-button pure-button-primary"
+                        type="submit" value="change">
+            </form>
+        </div>
+    </div>
+
+    <div class="content">
+        <ng-view></ng-view>
+    </div>
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/im.js"></script>
+  <script charset="UTF-8" type="text/javascript" src="http://cdn.intermine.org/js/intermine/im-tables/latest/imtables-bundled.js"></script>
+  <script src="http://cdn.intermine.org/js/intermine/apps-c/list-widgets/2.0.4/app.bundle.min.js"></script>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<h2>Enrichment Widgets in {{connection.mine.root}}</h2>
+
+<form>
+    <select
+        ng-model="selectedList"
+        ng-options="list.name group by list.type for list in lists">
+    </select>
+</form>
+
+<ul class="grid-list">
+    <li ng-repeat="widget in widgets | filter:{widgetType:'enrichment'}">
+        <a href="#/enrichment/{{selectedList.name}}/{{widget.name}}">
+            {{widget.title}}
+        </a>
+    </li>
+</ul>

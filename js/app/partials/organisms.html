@@ -1,0 +1,10 @@
+<h2>Organisms on {{connection.mine.root}}</h2>
+
+<span>{{organisms.length}} organisms with genes</span>
+
+<ul class="grid-list">
+    <li ng-repeat="org in organisms">
+        <a href="#/genes/{{org.taxonId}}" class="name">{{org.name}}</a>
+        <span class="count">{{org.count}}</span>
+    </li>
+</ul>
