@@ -13,6 +13,10 @@ config(['$routeProvider', function($routeProvider) {
     templateUrl: 'partials/genes.html',
     controller: 'GenesCntl'
   });
+  $routeProvider.when('/proteins', {
+    templateUrl: 'partials/proteins.html',
+    controller: 'ProteinsCntl'
+  });
   $routeProvider.when('/genes/:taxonId', {
     templateUrl: 'partials/genes.html',
     controller: 'GenesCntl'

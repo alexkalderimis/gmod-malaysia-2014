@@ -91,6 +91,9 @@ angular.module('GMODMalaysiaApp.controllers', []).
       return query;
     });
   })
+  .controller('ProteinsCntl', function($scope, $routeParams) {
+    /* Stub of Proteins Controller */
+  })
   .controller('GenesCntl', function($scope, $routeParams) {
     $scope.query = {select: ['Gene.*']};
     if ($routeParams.taxonId) {
